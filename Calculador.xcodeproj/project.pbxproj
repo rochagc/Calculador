@@ -12,6 +12,7 @@
 		D713B30620D72427003CE824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D713B30420D72427003CE824 /* Main.storyboard */; };
 		D713B30820D72427003CE824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D713B30720D72427003CE824 /* Assets.xcassets */; };
 		D713B30B20D72427003CE824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D713B30920D72427003CE824 /* LaunchScreen.storyboard */; };
+		D7F5234020D9F91200B3FB06 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F5233F20D9F91200B3FB06 /* BrowserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D713B30720D72427003CE824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D713B30A20D72427003CE824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D713B30C20D72427003CE824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F5233F20D9F91200B3FB06 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				D713B30020D72427003CE824 /* AppDelegate.swift */,
 				D713B30220D72427003CE824 /* ViewController.swift */,
+				D7F5233F20D9F91200B3FB06 /* BrowserViewController.swift */,
 				D713B30420D72427003CE824 /* Main.storyboard */,
 				D713B30720D72427003CE824 /* Assets.xcassets */,
 				D713B30920D72427003CE824 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D713B30320D72427003CE824 /* ViewController.swift in Sources */,
+				D7F5234020D9F91200B3FB06 /* BrowserViewController.swift in Sources */,
 				D713B30120D72427003CE824 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				D713B31120D72427003CE824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

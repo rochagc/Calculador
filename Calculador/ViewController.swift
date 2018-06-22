@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Esconde a barra de navegação quando entra na tela principal
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Exibe a barra de navegação quando sai da tela principal
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
 
 }
 

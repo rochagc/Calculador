@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "logo_calculador.png",
+      "filename" : "salario_liquido.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "logo_calculador@2x.png",
+      "filename" : "salario_liquido@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "logo_calculador@3x.png",
+      "filename" : "salario_liquido@3x.png",
       "scale" : "3x"
     }
   ],

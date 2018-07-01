@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Override point for customization after application launch.
-        let navigationBarAppearace = UINavigationBar.appearance()
+        let navigationBarAppearance = UINavigationBar.appearance()
         
         // Define a cor branca para todos os comandos da barra de navegação de todas as views
-        navigationBarAppearace.tintColor = UIColor.white
+        navigationBarAppearance.tintColor = UIColor.white
         
         // Define a cor base para a barra de navegação de todas as views
-        navigationBarAppearace.barTintColor = uicolorFromHex(rgbValue: 0x007d5f)
+        navigationBarAppearance.barTintColor = uicolorFromHex(rgbValue: 0x007d5f)
         
         return true
     }

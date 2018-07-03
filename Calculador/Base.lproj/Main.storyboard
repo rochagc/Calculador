@@ -21,9 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_calculador" translatesAutoresizingMaskIntoConstraints="NO" id="kwP-9t-6WH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69b-H7-OiD">
                                 <rect key="frame" x="113" y="644" width="149" height="15"/>
                                 <constraints>
@@ -127,15 +124,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.49299818277359009" blue="0.37044602632522583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kwP-9t-6WH" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="5Cm-5I-LY8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DpL-G0-Upk" secondAttribute="bottom" constant="5" id="8ff-s8-RTh"/>
-                            <constraint firstAttribute="trailing" secondItem="kwP-9t-6WH" secondAttribute="trailing" id="Adk-iU-8Lv"/>
-                            <constraint firstItem="kwP-9t-6WH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CUk-bu-Zn3"/>
                             <constraint firstAttribute="trailing" secondItem="DpL-G0-Upk" secondAttribute="trailing" constant="5" id="MH7-Ab-b9M"/>
                             <constraint firstAttribute="trailing" secondItem="DpL-G0-Upk" secondAttribute="trailing" constant="5" id="TX0-EM-oLo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="69b-H7-OiD" secondAttribute="bottom" constant="8" id="eUJ-aH-53U"/>
                             <constraint firstItem="d6a-n7-cQa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gJq-bw-ZPt"/>
-                            <constraint firstItem="kwP-9t-6WH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ii8-q3-79S"/>
                             <constraint firstItem="d6a-n7-cQa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lG4-U9-ux5"/>
                             <constraint firstItem="69b-H7-OiD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lx0-8N-kil"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DpL-G0-Upk" secondAttribute="bottom" constant="5" id="ubI-73-8zr"/>
@@ -168,21 +161,14 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBr-ML-5BA">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="&lt;" id="VIw-fW-OUX">
+                                    <barButtonItem title="&lt;&lt;" id="VIw-fW-OUX">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="myBackButton:" destination="KRm-ag-0is" id="8yj-w3-Qv0"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5T4-tH-wbJ"/>
-                                    <barButtonItem systemItem="refresh" id="wAo-23-Lu1">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <action selector="myRefreshButton:" destination="KRm-ag-0is" id="RRb-zL-8bG"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HcK-v2-swp"/>
-                                    <barButtonItem title="&gt;" id="OVA-Nh-VGI">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Fwx-7m-8nK"/>
+                                    <barButtonItem title="&gt;&gt;" id="OVA-Nh-VGI">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="myFowardButton:" destination="KRm-ag-0is" id="5ur-8I-GYi"/>
@@ -211,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="1476" y="792.95352323838085"/>
         </scene>
-        <!--View Controller-->
+        <!--Info Controller-->
         <scene sceneID="iJa-aJ-9pg">
             <objects>
-                <viewController id="t1m-yj-bXd" sceneMemberID="viewController">
+                <viewController id="t1m-yj-bXd" customClass="InfoController" customModule="Calculador" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="teH-pN-Lcc"/>
                         <viewControllerLayoutGuide type="bottom" id="lVG-tN-LL6"/>
@@ -222,7 +208,7 @@
                     <view key="view" contentMode="scaleToFill" id="Yvh-Pd-6nZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.49299818280000002" blue="0.37044602630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMc-lI-gnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -251,10 +237,10 @@
             </objects>
             <point key="canvasLocation" x="-42.399999999999999" y="792.95352323838085"/>
         </scene>
-        <!--View Controller-->
+        <!--Salario Liquido Controller-->
         <scene sceneID="teW-WM-Sym">
             <objects>
-                <viewController id="PT8-Mt-0nE" sceneMemberID="viewController">
+                <viewController id="PT8-Mt-0nE" customClass="SalarioLiquidoController" customModule="Calculador" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SHD-PY-Ayp"/>
                         <viewControllerLayoutGuide type="bottom" id="HBb-rh-qza"/>
@@ -262,17 +248,17 @@
                     <view key="view" contentMode="scaleToFill" id="H9W-SL-7Cs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.49299818280000002" blue="0.37044602630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06j-7B-qpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-404" y="1503"/>
+            <point key="canvasLocation" x="-404" y="1502.6986506746628"/>
         </scene>
-        <!--View Controller-->
+        <!--Decimo Terceiro Controller-->
         <scene sceneID="ueu-pk-xjA">
             <objects>
-                <viewController id="Tn5-WR-Qqq" sceneMemberID="viewController">
+                <viewController id="Tn5-WR-Qqq" customClass="DecimoTerceiroController" customModule="Calculador" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3uq-3b-8ZA"/>
                         <viewControllerLayoutGuide type="bottom" id="ELL-QH-tsv"/>
@@ -280,17 +266,17 @@
                     <view key="view" contentMode="scaleToFill" id="Wya-2k-z7q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.49299818280000002" blue="0.37044602630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLv-W7-5Nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="327" y="1503"/>
         </scene>
-        <!--View Controller-->
+        <!--Ferias Controller-->
         <scene sceneID="DiL-Sn-xtT">
             <objects>
-                <viewController id="2qx-7U-C3Z" sceneMemberID="viewController">
+                <viewController id="2qx-7U-C3Z" customClass="FeriasController" customModule="Calculador" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4XD-A4-q7s"/>
                         <viewControllerLayoutGuide type="bottom" id="NqG-qg-1Xs"/>
@@ -298,17 +284,17 @@
                     <view key="view" contentMode="scaleToFill" id="m5g-nv-5de">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.49299818280000002" blue="0.37044602630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWk-eR-K55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1054" y="1503"/>
         </scene>
-        <!--View Controller-->
+        <!--Price Controller-->
         <scene sceneID="a9x-b3-VpN">
             <objects>
-                <viewController id="asa-IC-00D" sceneMemberID="viewController">
+                <viewController id="asa-IC-00D" customClass="PriceController" customModule="Calculador" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FjR-FV-Ddl"/>
                         <viewControllerLayoutGuide type="bottom" id="5CL-wg-0Qz"/>
@@ -316,7 +302,7 @@
                     <view key="view" contentMode="scaleToFill" id="iGK-Lz-lPw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.49299818280000002" blue="0.37044602630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xH-z7-5B9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -327,7 +313,6 @@
     <resources>
         <image name="decimo_terceiro" width="120" height="120"/>
         <image name="ferias" width="120" height="120"/>
-        <image name="fundo_calculador" width="187" height="333"/>
         <image name="info" width="21" height="21"/>
         <image name="logo_calculador" width="248" height="38"/>
         <image name="price" width="120" height="120"/>

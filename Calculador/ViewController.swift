@@ -8,19 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BackgroundViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
+    /*override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Esconde a barra de navegação quando entra na tela principal
@@ -32,7 +22,7 @@ class ViewController: UIViewController {
         
         // Exibe a barra de navegação quando sai da tela principal
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
+    }*/
 
 }
 

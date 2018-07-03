@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BrowserViewController: UIViewController {
+class BrowserViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var myWebView: UIWebView!
     
@@ -16,10 +16,6 @@ class BrowserViewController: UIViewController {
         if myWebView.canGoBack {
             myWebView.goBack()
         }
-    }
-    
-    @IBAction func myRefreshButton(_ sender: Any) {
-        myWebView.reload()
     }
     
     @IBAction func myFowardButton(_ sender: Any) {
@@ -30,6 +26,20 @@ class BrowserViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myWebView.delegate = self
+        
         myWebView.loadRequest(URLRequest(url: URL(string: "http://www.calculador.com.br")!))
     }
+    
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        let alertaController = UIAlertController(title: "", message: "Não foi possível carregar o site. Verifique sua conexão com a internet", preferredStyle: .alert)
+        
+        let alertaConfirmar = UIAlertAction(title: "OK", style: .default, handler: { _ in self.navigationController!.popToRootViewController(animated: true) })
+        
+        alertaController.addAction(alertaConfirmar)
+        
+        present(alertaController, animated: true, completion: nil)
+    }
+
 }

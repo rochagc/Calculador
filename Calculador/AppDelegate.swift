@@ -23,7 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearance.tintColor = UIColor.white
         
         // Define a cor base para a barra de navegação de todas as views
-        navigationBarAppearance.barTintColor = uicolorFromHex(rgbValue: 0x007d5f)
+        //navigationBarAppearance.barTintColor = uicolorFromHex(rgbValue: 0x007d5f)
+        
+        navigationBarAppearance.setBackgroundImage(UIImage(), for: .default)
+        
+        navigationBarAppearance.shadowImage = UIImage()
         
         return true
     }
@@ -51,12 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // Retorna a cor correspondente a partir do hexadecimal
-    func uicolorFromHex(rgbValue:UInt32) -> UIColor {
+    /*func uicolorFromHex(rgbValue:UInt32) -> UIColor {
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
         let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
         let blue = CGFloat(rgbValue & 0xFF)/256.0
         
         return UIColor(red:red, green:green, blue:blue, alpha:1.0)
-    }
+    }*/
 }
 

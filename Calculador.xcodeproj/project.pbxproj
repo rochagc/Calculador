@@ -12,6 +12,12 @@
 		D713B30620D72427003CE824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D713B30420D72427003CE824 /* Main.storyboard */; };
 		D713B30820D72427003CE824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D713B30720D72427003CE824 /* Assets.xcassets */; };
 		D713B30B20D72427003CE824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D713B30920D72427003CE824 /* LaunchScreen.storyboard */; };
+		D71A752820EB0E6E00BED695 /* SalarioLiquidoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71A752720EB0E6E00BED695 /* SalarioLiquidoController.swift */; };
+		D71A752A20EB13AB00BED695 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71A752920EB13AB00BED695 /* BackgroundViewController.swift */; };
+		D71A752C20EB156500BED695 /* DecimoTerceiroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71A752B20EB156500BED695 /* DecimoTerceiroController.swift */; };
+		D71A752E20EB15BA00BED695 /* FeriasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71A752D20EB15BA00BED695 /* FeriasController.swift */; };
+		D71A753020EB15F000BED695 /* PriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71A752F20EB15F000BED695 /* PriceController.swift */; };
+		D71A753220EB164800BED695 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71A753120EB164800BED695 /* InfoController.swift */; };
 		D7F5234020D9F91200B3FB06 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F5233F20D9F91200B3FB06 /* BrowserViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,12 @@
 		D713B30720D72427003CE824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D713B30A20D72427003CE824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D713B30C20D72427003CE824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D71A752720EB0E6E00BED695 /* SalarioLiquidoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalarioLiquidoController.swift; sourceTree = "<group>"; };
+		D71A752920EB13AB00BED695 /* BackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
+		D71A752B20EB156500BED695 /* DecimoTerceiroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimoTerceiroController.swift; sourceTree = "<group>"; };
+		D71A752D20EB15BA00BED695 /* FeriasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeriasController.swift; sourceTree = "<group>"; };
+		D71A752F20EB15F000BED695 /* PriceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceController.swift; sourceTree = "<group>"; };
+		D71A753120EB164800BED695 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 		D7F5233F20D9F91200B3FB06 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,8 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				D713B30020D72427003CE824 /* AppDelegate.swift */,
+				D71A752920EB13AB00BED695 /* BackgroundViewController.swift */,
 				D713B30220D72427003CE824 /* ViewController.swift */,
 				D7F5233F20D9F91200B3FB06 /* BrowserViewController.swift */,
+				D71A752720EB0E6E00BED695 /* SalarioLiquidoController.swift */,
+				D71A752B20EB156500BED695 /* DecimoTerceiroController.swift */,
+				D71A752D20EB15BA00BED695 /* FeriasController.swift */,
+				D71A752F20EB15F000BED695 /* PriceController.swift */,
+				D71A753120EB164800BED695 /* InfoController.swift */,
 				D713B30420D72427003CE824 /* Main.storyboard */,
 				D713B30720D72427003CE824 /* Assets.xcassets */,
 				D713B30920D72427003CE824 /* LaunchScreen.storyboard */,
@@ -140,8 +158,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D713B30320D72427003CE824 /* ViewController.swift in Sources */,
+				D71A752C20EB156500BED695 /* DecimoTerceiroController.swift in Sources */,
+				D71A753220EB164800BED695 /* InfoController.swift in Sources */,
+				D71A752E20EB15BA00BED695 /* FeriasController.swift in Sources */,
 				D7F5234020D9F91200B3FB06 /* BrowserViewController.swift in Sources */,
+				D71A752A20EB13AB00BED695 /* BackgroundViewController.swift in Sources */,
 				D713B30120D72427003CE824 /* AppDelegate.swift in Sources */,
+				D71A752820EB0E6E00BED695 /* SalarioLiquidoController.swift in Sources */,
+				D71A753020EB15F000BED695 /* PriceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
